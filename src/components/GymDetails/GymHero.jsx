@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GymInterior from "../../assets/images/gym-interior.png";
+import GymInterior from "../../assets/images/gym-Interior.png";
 import KarbonIcon from "../../assets/icons/K-vector.png";
 
 const StarIcon = () => (
@@ -90,7 +90,7 @@ export default function GymHero({ gym = {} }) {
         </div>
       </div>
 
-      
+
 
       {/* Name + verified + rating */}
       <div className="px-2 pt-5 pb-4">
