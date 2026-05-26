@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import ArrowLeft from '../assets/icons/left-arrow.svg'
-
+import HeroSectionBg from '../assets/images/Hero-Section.png'
 import ClassHero from '../components/ClassDetails/ClassHero'
 
 export default function ClassDetail() {
@@ -61,7 +61,7 @@ export default function ClassDetail() {
       </div>
 
       <ClassHero
-        image="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=80"
+        image={HeroSectionBg}
         name="Morning Vinyasa"
         status="FEATURED"
         type="YOGA"

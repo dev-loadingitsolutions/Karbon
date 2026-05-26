@@ -1,7 +1,15 @@
 import GymInterior from "../../assets/images/gym-interior.png";
 import KarbonIcon from "../../assets/icons/K-vector.png";
 
-export default function ClassHero({ image = GymInterior, name = 'Class Name', status = 'FEATURED', type = 'CLASS' }) {
+
+
+
+
+export default function ClassHero(  { image = GymInterior, name = 'Morning Yoga Flow', status = 'UNISEX', type = 'UNISEX' }) {
+
+
+
+  
   return (
     <div className="w-full px-[12px] max-w-md mx-auto">
       {/* Hero image */}
@@ -15,15 +23,22 @@ export default function ClassHero({ image = GymInterior, name = 'Class Name', st
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, transparent 60%)' }} />
 
         {/* Status badges */}
-        <div className="absolute top-4 left-4 flex gap-2">
-          <span className="bg-white text-gray-900 text-[10px] font-bold tracking-widest uppercase px-5 py-1.5 rounded-full shadow-sm">
-            {status}
+        <div className="absolute bottom-4 left-4 flex flex-col  gap-3">
+          <span  className="black-badge bg-black text-white  text-[10px] font-normal tracking-widest uppercase px-5 py-1.5 rounded-full shadow-sm">
+            UNISEX
           </span>
-          <span className="bg-white text-gray-900 text-[10px] font-bold tracking-widest uppercase px-5 py-1.5 rounded-full shadow-sm">
-            {type}
-          </span>
+          <h1 className="text-white text-[30px] font-noraml">{name}
+
+          </h1>
         </div>
+
+
+        
+
+
       </div>
+
+        
     </div>
   )
 }

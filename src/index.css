@@ -16,3 +16,7 @@ body {
   background: #f9f9f9;
   overscroll-behavior: none;
 }
+
+.black-badge{
+  width: fit-content;
+}

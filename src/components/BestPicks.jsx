@@ -55,7 +55,7 @@ const PinIcon = () => (
 
 
 
-export default function BestPicks({ data, items, navigateTo = '/classDetails' }) {
+export default function BestPicks({ data, items, navigateTo = '/gymDetails' }) {
   const navigate = useNavigate()
   const [likedIds, setLikedIds] = useState([]);
 
@@ -165,7 +165,7 @@ export default function BestPicks({ data, items, navigateTo = '/classDetails' })
   );
 }
 
-function GymCard({ gym, liked, onLike, index, navigateTo = '/classDetails' }) {
+function GymCard({ gym, liked, onLike, index, navigateTo = '/gymDetails' }) {
   const navigate = useNavigate()
   return (
     <div
